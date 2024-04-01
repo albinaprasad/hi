@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <main>
+        <div class="si">
+            <div class="center">
+                <h2>Be The First To Know: Register For Job Listings!</h2>
+                <form action="">
+                <div class="in">
+                    <input type="text" id="name" required/>
+                    <label for="name"> name</label>
+                </div>
+                <br>
+                <div class="in">
+                    <input type="text" id="email" required/>
+                    <label for="email">email address</label>
+                </div>
+                <br>
+                <div class="in">
+                    <input type="text" id="password" required/>
+                    <label for="password">password</label>
+                </div>
+                <br>
+                <div class="in">
+                    <select id="job">
+                        <option value ="job"><b>Interested Job</b></option>
+                        <option value ="job">finance and accounting</option>
+                        <option value ="job">marketing and advertising</option>
+                        <option value ="job">system administrator</option>
+                        <option value ="job">network engineer</option>
+                        <option value ="job">data analyst</option>
+                        <option value ="job">cloud architect</option>
+                    </select>
+                </div>
+                <br>
+                <button class="SignUp">Sign Up</button>
+                <br>
+                <h3>already have an account?<a href="{% url 'login' %}">LOGIN</a> </h3>
+                
+
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

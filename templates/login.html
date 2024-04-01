@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LOGIN</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="styles.css">
+        <header>
+            <div class="abc">
+                <a href="#">LOGO</a>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">about</a>
+                    <a href="#">contact</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="ccc">
+                <div class="abc">
+                    <div class="left">
+                        <h1><i>WELCOME TO OUR WEBSITE</i></h1>
+                        <p><i>A job listing tracker is a tool that helps job seekers keep track of
+                             available job openings by collecting and organizing them from various
+                              sources, like online job boards and company websites.</i></p>
+                              <button>Login</button>
+                    </div>
+                    <div class="right">
+                        <h2><b>Enter your details to log in !!!</b></h2>
+                        <form action="">
+                            <div class="input">
+                                <input type="text" id="name" required/>
+                                <label for="name">Name</label> 
+                            </div>
+                            <br>
+                            <div class="input">
+                                <input type="text" id="email" required/>
+                                <label for="email">Email</label> 
+                            </div>
+                            <br>
+                            <div class="input">
+                                <input type="text" id="password" required/>
+                                <label for="password">Password</label> 
+                            </div>
+                            <br>
+                            <div class="button">
+                                <input type="Submit" class="button"> 
+                            </div>
+                            <br>
+                            <br>
+                            <h3>
+                                Don't have an account? <a href="signup.html"></a>
+                                <a href="{% url 'signup' %}">signup</a>
+                            </h3>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
