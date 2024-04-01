@@ -33,6 +33,8 @@ def signup_view(request):
             email=email
         )
         user.save()
-    return redirect("/")
+        return redirect("/")
+    else:
+        return render(request,'signup.html')
 def home(req):
     return render(req,'home.html')
