@@ -2,16 +2,47 @@
 <html lang="en">
     <head>
         <title>LOGIN</title>
+        <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Materialize JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </head>
+    <style>
+        .form{
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+            justify-self: center;
+        }
+        .left{
+            max-width: 50%;
+            padding: 20px;
+        }
+        .abc{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
     <body>
         <link rel="stylesheet" href="styles.css">
         <header>
             <div class="abc">
-                <a href="#">LOGO</a>
+                
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">about</a>
-                    <a href="#">contact</a>
+                    <a href="#">LOGO</a>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">about</a>
+                        </li>
+                        <li>
+                            <a href="#">contact</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </header>
@@ -23,35 +54,33 @@
                         <p><i>A job listing tracker is a tool that helps job seekers keep track of
                              available job openings by collecting and organizing them from various
                               sources, like online job boards and company websites.</i></p>
-                              <button>Login</button>
+                              <button class="btn">Login</button>
                     </div>
                     <div class="right">
-                        <h2><b>Enter your details to log in !!!</b></h2>
-                        <form action="">
+                        <h3><b>Enter your details to log in !!!</b></h2>
+                        <form action="/login/" method="post" class="form">
                             <div class="input">
-                                <input type="text" id="name" required/>
+                                <input type="text" name="username" id="name" required/>
                                 <label for="name">Name</label> 
                             </div>
                             <br>
                             <div class="input">
-                                <input type="text" id="email" required/>
+                                <input type="email" name="email" id="email" required/>
                                 <label for="email">Email</label> 
                             </div>
                             <br>
                             <div class="input">
-                                <input type="text" id="password" required/>
+                                <input type="password" name="password" id="password" required/>
                                 <label for="password">Password</label> 
                             </div>
                             <br>
-                            <div class="button">
-                                <input type="Submit" class="button"> 
-                            </div>
+                            <input type="submit" class="btn" value="submit">
                             <br>
                             <br>
-                            <h3>
+                            <h5>
                                 Don't have an account? <a href="signup.html"></a>
                                 <a href="{% url 'signup' %}">signup</a>
-                            </h3>
+                            </h5>
                         </form>
                     </div>
                 </div>
